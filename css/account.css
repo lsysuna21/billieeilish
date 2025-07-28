@@ -1,0 +1,109 @@
+#account{
+  position: relative;
+  padding: 120px 0 60px;
+  min-height: 50vh;
+}
+#account:before {
+  content: '';
+  position: fixed;
+  top: 120px; 
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px); 
+  background: url(../image/CreateAccount-BG.png) no-repeat center top;
+  background-size: cover;
+  z-index: -1;
+}
+
+#login{
+  position: relative;
+  padding: 120px 0 60px;
+  min-height: 50vh;
+}
+#login:before {
+  content: '';
+  position: fixed;
+  top: 120px; 
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px); 
+  background: url(../image/SignIn-BG2.png) no-repeat center top;
+  background-size: cover;
+  z-index: -1;
+}
+
+#account .top h2,
+#login .top h2{
+  font-family: "Holtwood One SC", serif;
+  text-transform: uppercase;
+  color: #FDA038;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#account .top p{
+  color: white;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 25px;
+}
+#account .input,
+#login .input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+#account .input li,
+#login .input li{
+  margin-bottom: 20px;
+}
+#account .input h3,
+#login .input h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+#account .input input,
+#login .input input{
+  width: 534px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #FDA038;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+#account .input input::placeholder,
+#login .input input::placeholder
+{color: rgb(206, 206, 206);}
+#account .input input:focus::placeholder,
+#account .input input:focus::placeholder {color: #ccc;}
+
+#account .createbtn,
+#login .createbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#account a,
+#login a{
+  font-size: 28px;
+  font-family: "Holtwood One SC", serif;
+  color: #FDA038;
+  background-color: #1F71FF;
+  padding: 2px 30px;
+  border-radius: 50px;
+  transition: 0.1s ease-in-out;
+}
+#account a:hover,
+#login a:hover{
+  color: #1F71FF;
+  background-color: white;
+  border: 3px solid #FDA038;
+}

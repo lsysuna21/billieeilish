@@ -1,0 +1,112 @@
+#kitchen{
+  position: relative;
+  padding: 120px 0 60px;
+  min-height: 50vh;
+}
+#kitchen:before {
+  content: '';
+  position: fixed;
+  top: 120px; 
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px); 
+  background: url(../image/BillieKitchen/bg.png) no-repeat center top;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+#kitchen .top h2{
+  font-family: "Holtwood One SC", serif;
+  text-transform: uppercase;
+  color: #FDA038;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#kitchen .top p{
+  color: white;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 25px;
+}
+#kitchen .input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+
+#kitchen .input input{
+  width: 534px;
+  height: 40px;
+  background: black;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+}
+#kitchen .input input::placeholder{color: white;}
+#kitchen .input input:focus::placeholder {color: #ccc;}
+
+
+#kitchen .country{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#kitchen .country select{
+  width: 534px;
+  height: 40px;
+  background: black;
+  border: none;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+#kitchen>p{
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  color: white;
+  margin: 40px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+#kitchen .createbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kitchen .createbtn a{
+  font-size: 28px;
+  font-family: "Holtwood One SC", serif;
+  color: #FDA038;
+  background-color: #1F71FF;
+  padding: 2px 30px;
+  border-radius: 50px;
+  transition: 0.1s ease-in-out;
+}
+#kitchen .createbtn a:hover{
+  color: #1F71FF;
+  background-color: white;
+  border: 3px solid #FDA038;
+}
+#kitchen .skip a{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}

@@ -1,0 +1,65 @@
+#merch{
+  position: relative;
+  z-index: 0;
+  margin-top: 120px;
+  background: url(../image/Merch/BG.png) no-repeat center top;
+  background-size: 100% auto;
+  width: 100vw;
+  height: 878px;
+  overflow: hidden;
+}
+
+#merch p{
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 45px;
+}
+
+#merch .merchwrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#merch .merchwrap .shapall,
+#merch .merchwrap .billiexnike {
+  position: absolute;
+}
+#merch .merchwrap .shapall{
+  top: 60%; 
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+#merch .merchwrap .billiexnike {
+  top: 30%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+#merch .merchwrap .shapall:hover {
+  animation: rotate-ani 1.5s linear infinite;
+}
+#merch .merchwrap .billiexnike:hover {
+  animation: rotate-ani 1.5s linear infinite;
+}
+
+
+#merch .merchwrap .imgbox {
+  position: relative;
+}
+#merch .merchwrap img{
+  width: 430px;
+}
+#merch .merchwrap .shapall .imgbox p {
+  position: absolute;
+  top: 42%;
+  left: 27%;
+}
+#merch .merchwrap .billiexnike .imgbox p {
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  font-size: 33px;
+  line-height: 30px;
+}
+

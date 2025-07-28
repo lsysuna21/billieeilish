@@ -1,0 +1,148 @@
+/* 위치정보 */
+.more-location{
+  margin: 30px 80px;
+	color: rgb(151, 151, 151);
+	font-size: 18px;
+  font-weight: 400;
+}
+.more-location span:nth-of-type(2){
+	color: white;
+  font-weight: 600;
+}
+
+
+#more{
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+#more .item-group{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+}
+
+:root{
+  --borderColor: #1F71FF;
+  --borderSize: 2px;
+}
+
+#more *,
+#more *:before,
+#more *:after{
+  transition: 0.35s;
+}
+
+#more .item-group{
+  counter-reset: num;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+#more .item{
+  width: 470px;
+  height: 470px;
+  position: relative;
+}
+#more .item:before{
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+#more .item:after{
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+#more .item-hover{
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+#more .item-hover span{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+#more .item-hover span:nth-of-type(1):before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: var(--borderSize);
+  background-color: var(--borderColor);
+  color: white;
+}
+#more .item-hover span:nth-of-type(1):after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: var(--borderSize);
+  background-color: var(--borderColor);
+}
+#more .item-hover span:nth-of-type(2):before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: var(--borderSize);
+  background-color: var(--borderColor);
+}
+#more .item-hover span:nth-of-type(2):after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: var(--borderSize);
+  background-color: var(--borderColor);
+}
+
+#more .item-hover a{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#more .item-hover a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Hover Effect */
+#more .item-hover:hover span:nth-of-type(1):before{
+  width: 100%;
+}
+#more .item-hover:hover span:nth-of-type(1):after{
+  height: 100%;
+}
+#more .item-hover:hover span:nth-of-type(2):before{
+  width: 100%;
+}
+#more .item-hover:hover span:nth-of-type(2):after{
+  height: 100%;
+}
+#more .item:hover:after{
+  opacity: 1;
+}

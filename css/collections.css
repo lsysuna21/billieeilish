@@ -1,0 +1,193 @@
+/* 배너이미지 */
+#collections-banner{
+  padding-top: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#collections-banner img{
+  width: 100%;
+  height: auto;
+}
+#collections-banner p{
+  color: white;
+  position: absolute;
+  font-family: 'HSBombaram3_Regular';
+  font-size: 90px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #000;
+}
+
+
+/* 위치 정보 */
+.collections-location{
+  margin: 30px 80px;
+	color: rgb(185, 185, 185);
+	font-size: 18px;
+  font-weight: 400;
+}
+.collections-location span:nth-of-type(3){
+	color: white;
+  font-weight: 600;
+}
+
+/* 콜렉션 필터 */
+.nfilter-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px 0 50px;
+}
+.cate-warp {
+  color: white;
+  font-size: 18px;
+}
+.cate-row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cate-row a {
+  display: inline-block;
+  border: 2px solid #FDA038;
+  border-radius: 50px;
+  background-color: rgba(31, 113, 255, 0.3);
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.cate-row:first-child a:first-child {
+  /* Blohsh에만 적용 */
+  background-color:#FDA038; 
+}
+.cate-row a:hover{
+  background-color:#FDA038; 
+}
+
+
+
+
+/* 제품 목록 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 200px;
+  max-width: 1400px;
+  margin: 100px auto;
+  row-gap: 120px;
+}
+.product {
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+}
+.cimage-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.cmain-img,
+.chover-img {
+  width: 100%;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+.chover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.cimage-box:hover .chover-img {
+  opacity: 1;
+}
+.product-grid .pre-order{
+  color: white;
+  margin: 20px 0 25px;
+  font-size: 18px;
+  background-color: #1F71FF;
+  border-radius: 50px;
+  width: 150px;
+  margin: 20px auto 0;
+}
+.product-grid .sold-out{
+  color: white;
+  margin: 20px 0 25px;
+  font-size: 18px;
+  border: 2px solid #1F71FF;
+  border-radius: 50px;
+  width: 150px;
+  margin: 20px auto 0;
+}
+.product-grid p{
+  color: white;
+  margin: 20px 0 25px;
+  font-size: 20px;
+}
+strong{color: white;font-size: 22px;}
+
+
+/* 하트 아이콘 */
+i{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FDA038;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+.fa-heart {
+  transition: opacity 0.3s ease;
+}
+
+.fa-heart.fade-out {
+  opacity: 0;
+}
+
+
+
+
+/* eco */
+.eco-details{
+  position: relative;
+  padding-bottom: 320px;
+}
+.eco-details h3{
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  width: 330px;
+  text-align: center;
+  background-color: #1F71FF;
+  border-radius: 50px;
+  margin: auto;
+  position: relative;
+}
+.eco-details .txt {
+  width: 1200px;
+  height: 300px;
+  border: 1px solid #1F71FF;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.eco-details p{
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 300;
+}

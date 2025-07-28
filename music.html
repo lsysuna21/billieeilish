@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>BillieEilish</title>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+  <!-- font-family: "Holtwood One SC", serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&displ ay=swap" rel="stylesheet">
+  <!-- font-family: "Inconsolata", monospace; -->
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- top버튼 -->
+  <div id="topbtn">
+    <a href="#">
+      <img src="image/logo2.png" alt="topbutton">
+    </a>
+  </div>
+
+  <div class="top_wrap">
+    <header>
+      <a href="main.html"><img src="image/logo2.png" alt="mainlogo"></a>
+      <div class="right-group">
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="#none"><span class="material-symbols-outlined">
+          shopping_cart
+          </span></a>
+        <a href="createaccount.html"><span class="material-symbols-outlined">
+          person
+          </span></i></a>
+      </div>
+    </header>
+  
+    <nav>
+      <ul class="gnb"> 
+        <li class="main"><a href="music.html">Music</a></li>
+        <li class="main"><a href="merch.html">Merch</a>
+          <ul class="sub">
+            <li><a href="shopall.html">SHOP ALL</a></li>
+            <li><a href="nike.html">BILLIE X NIKE</a></li>
+          </ul> 
+        </li>
+        <li class="main"><a href="collections.html">Collections</a></li>
+        <li class="main"><a href="kitchen.html">Billie’s Kitchen</a></li>
+        <li class="main"><a href="more.html">More</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <!-- 여기부터 -->
+  <!-- 서브공통부분 -->
+  <section id="musicbanner">
+    <img src="image/Music/mbanner.png" alt="musicbanner">
+    <p>Music</p>
+  </section>
+
+  <div class="music-location">
+    <span>Home</span>
+    <span> &gt; MUSIC &gt; </span>
+    <span>HIT ME HARD AND SOFT</span>
+  </div>
+
+  <div class="filter-wrap">
+    <div class="filter-left">
+      <div class="filter-container" id="availabilityFilter">
+        <div class="filter-title">
+          AVAILABILITY
+          <span class="arrow"><span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></span>
+        </div>
+        <div class="filter-box">
+          <div class="checkbox-option">
+            <input type="checkbox" id="in-stock">
+            <label for="in-stock">IN STOCK <span style="color:white;">(22)</span></label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="out-stock">
+            <label for="out-stock">OUT OF STOCK <span style="color:white;">(16)</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-container">
+        <div class="filter-title">
+          PRICE ($)
+          <span class="arrow"><span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span></span>
+        </div>
+        <div class="filter-box">
+          <input type="number" class="price-input" placeholder="0">
+          <span class="dash">-</span>
+          <input type="number" class="price-input" placeholder="100.00">
+        </div>
+      </div>
+    </div>
+    <div class="sort-by">
+      <select>
+        <option value="c01" selected>HIT ME HARD AND SOFT</option>
+        <option value="c02">VINYL</option>
+        <option value="c03">CDS + CASSETTES</option>
+        <option value="c04">DIGITAL</option>
+        <option value="c05">SHOP ALL</option>
+        </option>
+      </select>
+    </div>
+  </div>
+
+
+  <!-- 다른부분 -->
+  <section id="music">
+    <div class="product-grid">
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/1.png" class="main-img">
+        </div>
+        <p class="product-title">
+          BIRDS OF A FEATHER<br>
+          7" Vinyl [Translucent Green]
+        </p>
+        <strong class="price">$15.00</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/2.png" class="main-img">
+          <img src="image/Music/2-1.png" class="hover-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Standard Vinyl
+        </p>
+        <strong class="price">$33.00</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/3.png" class="main-img">
+          <img src="image/Music/3-1.png" class="hover-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Standard CD
+        </p>
+        <strong class="price">$14.00</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/4.png" class="main-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Isolated Vocals Vinyl
+        </p>
+        <strong class="price">$33.00</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/5.png" class="main-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT COVERTEE<br>
+          / ISOLATED VOCALS BUNDLE
+        </p>
+        <strong class="price">$75.00</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/6.png" class="main-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Digital Album
+        </p>
+        <strong class="price">$9.99</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/7.png" class="main-img">
+          <img src="image/Music/7-1.png" class="hover-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Target Excl. Vinyl
+        </p>
+        <strong class="price">$34.99</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/8.png" class="main-img">
+          <img src="image/Music/8-1.png" class="hover-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Walmart Excl. Vinyl
+        </p>
+        <strong class="price">$32.97</strong>
+      </div>
+      <div class="product">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image-box">
+          <img src="image/Music/9.png" class="main-img">
+          <img src="image/Music/9-1.png" class="hover-img">
+        </div>
+        <p class="product-title">
+          HIT ME HARD AND SOFT<br>
+          Indies Excl. Vinyl
+        </p>
+        <strong class="price">$32.99</strong>
+      </div>
+      
+      
+      
+    </div>
+
+    <div class="eco-details ani y_Bottom">
+      <h3>Eco Details</h3>
+      <di class="txt">
+        <p>
+          All vinyl is made using recyclable or recycled compounds and all packaging is made from recycled paper/boards.<br>
+          The ink used is raw plant-based and water-based dispersion varnish. The sleeves are 100% recycled and re-usable.
+        </p>
+        <p>
+          Cassette shells will be made from recycled shell pieces that are ground down and re-used to make new cassette shells.<br>
+          No plastic cassette boxes will be used; instead eco-friendly stock to make o-cards will be used in their place.
+        </p>
+        <p>
+          CD packaging will be made from softpaks, with zero plastic jewel boxes. <br>
+          All softpaks will be made from stock with 100% renewable fibers 
+          and up to 30% post-consumer recycled ibers that are 100% recyclable.
+        </p>
+      </di>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  
+
+  <!-- 여기까지 -->
+
+  <footer>
+    <div class="fisrt">
+      <a href="#"><img src="image/logo.png" alt="logo"></a>
+      <ul>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="merch.html">MERCH</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="kitchen.html">BILLIE'S KITCHEN</a></li>
+        <li><a href="more.html">MORE</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://store.billieeilish.com/pages/help">HELP&amp;SUPPORT</a></li>
+        <li><a href="https://store.billieeilish.com/policies/terms-of-sale">TERMS</a></li>
+        <li><a href="https://store.billieeilish.com/policies/privacy-policy">PRIVACY</a></li>
+        <li><a href="https://store.billieeilish.com/policies/legal-notice">DO NOT SELL MY PERSONAL INFORMATION</a></li>
+        <li><a href="https://store.billieeilish.com/pages/help">COOKIE CHOICES</a></li>
+      </ul>
+    </div>
+    <div class="sns">
+      <a href="https://www.facebook.com/billieeilish/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/billieeilish"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/billieeilish/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://music.apple.com/us/artist/billie-eilish/1065981054"><i class="fa-brands fa-apple"></i></a>
+      <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"><i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <p>
+      If you are using a screen reader and are having problems using this website, please call 866-682-4413 for assistance.
+    </p>
+  </footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Script Source -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

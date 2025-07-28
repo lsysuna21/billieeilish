@@ -1,0 +1,210 @@
+#necklace{
+  padding-top: 110px;
+  width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* 이미지 슬라이드 박스 */
+#necklace .fade {
+  position: relative;
+  width: 500px; 
+  height: 500px;
+  margin: 120px;
+  background-color: #001848; /* 어두운 배경 */
+  border-radius: 10px;
+}
+
+/* 이미지 리스트 */
+.fade-items {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fade-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fade-items ul li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fade-items ul li:first-child {
+  display: block;
+}
+.fade-items ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 좌우 화살표 */
+.fade-side .icon {
+  font-size: 40px;
+  font-weight: 600;
+  color: #1F71FF;
+}
+.fade-side .prev,
+.fade-side .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.fade-side .prev {
+  left: -60px;
+}
+.fade-side .next {
+  right: -60px;
+}
+.fade-side .prev:hover,
+.fade-side .next:hover {
+  opacity: 0.6;
+}
+
+/* 인디케이터 (이미지 아래) */
+.fade-indicator {
+  position: absolute;
+  bottom: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fade-indicator a {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 4px;
+  text-indent: -9999px;
+}
+.fade-indicator a.active {
+  background-color: #1F71FF;
+}
+
+
+/* 오른쪽 */
+#necklace .right{
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  flex-direction: column;
+  padding-top: 120px;
+  padding-left: 100px;
+}
+#necklace .top .pre-order{
+  color: white;
+  margin: 20px 0 25px;
+  font-size: 18px;
+  background-color: #1F71FF;
+  border-radius: 50px;
+  width: 150px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+#necklace .top h3{
+  color: white;
+  font-size: 34px;
+  margin: 15px 0;
+}
+#necklace .top strong{
+  font-size: 30px;
+}
+
+/* 수량표시 */
+.quantity-wrapper {
+  margin: 20px 0 0;
+  color: white;
+  text-align: center;
+}
+.qty-btn {
+  color: white;
+  font-size: 20px;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background: none;
+}
+.qty-display {
+  font-size: 20px;
+  color: white;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+
+
+#necklace .right .createbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+#necklace .right a{
+  font-size: 28px;
+  font-family: "Holtwood One SC", serif;
+  color: #FDA038;
+  background-color: #1F71FF;
+  padding: 2px 30px;
+  border-radius: 50px;
+  transition: 0.1s ease-in-out;
+}
+#necklace .right a:hover{
+  color: #1F71FF;
+  background-color: white;
+  border: 3px solid #FDA038;
+}
+
+#necklace .bottom{
+  color: white;
+}
+#necklace .bottom h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* 장바구니 담김 효과 */
+.cart-icon-wrapper {
+  position: relative;
+  width: 24px; 
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon .material-symbols-outlined {
+  font-size: 24px;
+  line-height: 1;
+  display: block;
+}
+.star-effect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: gold;
+  font-size: 16px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+.star-effect.active {
+  opacity: 1;
+  transform: scale(1.0) rotate(20deg);
+}
